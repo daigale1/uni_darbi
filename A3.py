@@ -27,14 +27,16 @@ while turpinat == 1:
         n = int(input("Ievadiet naturālu skaitli (≥10): "))
 
     # Aprēķina pēdējo ciparu
-    #
+    # Cipars tiek iegūts skaitli dalot ar 10, iegūtais atlikums => pēdējais skaitlis
     pedejais = n % 10
 
     # Aprēķina pirmo ciparu
+    # Cipars tiek iegūts skaitli dalot ar 10 līdz skaitlis satur tikai vienu ciparu. Iegūtais cipars => pirmais skaitlis
     pirmais = n
     while pirmais >= 10:
         pirmais = pirmais // 10
 
+    # Aprēķina pirmā un pēdējā cipara summu
     summa = pirmais + pedejais
     print(f"Pirmā un pēdējā cipara summa ir: {summa}")
 
