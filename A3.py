@@ -11,7 +11,8 @@ Programma izveidota 13.09.2025
     ievade   paredzamais rezultāts
      543              8
      21               3
-     3          Kļūda. Jāievada vismaz divciparu skaitlis (≥10).
+     3                6
+     -1       Kļūda. Jāievada naturāls skaitlis, kas ir >0.      
 
 ***********************************
 """
@@ -21,10 +22,11 @@ turpinat = 1
 while turpinat == 1:
 
     # Skaitļa ievade un tā korektuma nodrošināšana
-    n = int(input("Ievadiet naturālu skaitli (≥10): "))
-    while n < 10:
-        print("Kļūda. Jāievada vismaz divciparu naturāls skaitlis (≥10).")
-        n = int(input("Ievadiet naturālu skaitli (≥10): "))
+    n = int(input("Ievadiet naturālu skaitli (>0): "))
+    while n <= 0:
+        print("Kļūda. Jāievada naturāls skaitlis, kas ir >0.")
+        n = int(input("Ievadiet naturālu skaitli (>0): "))
+
 
     # Aprēķina pēdējo ciparu
     # Cipars tiek iegūts skaitli dalot ar 10, iegūtais atlikums => pēdējais skaitlis
