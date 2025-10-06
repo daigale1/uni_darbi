@@ -11,7 +11,8 @@ Programma izveidota 14.09.2025
     ievade   paredzamais rezultāts
      543              8
      21               3
-     3          Kļūda. Jāievada vismaz divciparu skaitlis (≥10).
+     3                6
+     -1       Kļūda. Jāievada naturāls skaitlis, kas ir >0.
 
 ***********************************
 */
@@ -26,12 +27,12 @@ int main() {
         int n;
 
         // Skaitļa ievade un tā korektuma nodrošināšana
-        cout << "Ievadiet naturālu skaitli (≥10): ";
+        cout << "Ievadiet naturālu skaitli (>0): ";
         cin >> n;
 
-        while (n < 10) {
-            cout << "Kļūda. Jāievada vismaz divciparu naturāls skaitlis (≥10)." << endl;
-            cout << "Ievadiet naturālu skaitli (≥10): ";
+        while (n <= 0) {
+            cout << "Kļūda. Jāievada naturāls skaitlis, kas ir >0." << endl;
+            cout << "Ievadiet naturālu skaitli (>0): ";
             cin >> n;}
 
         // Aprēķina pēdējo ciparu
