@@ -20,7 +20,6 @@ Programma izveidota 11.10.2025
 
 #include <iostream>
 #include <cmath>
-#include <string>
 using namespace std;
 
 /*
