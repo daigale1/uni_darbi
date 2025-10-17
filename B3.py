@@ -1,6 +1,6 @@
 """
 Daiga Leitāne, dl25036
-A3. Izveidot Python programmu, kura dotajam skaitļu intervālam [m,n] izdrukā visus tos skaitļus,
+B3. Izveidot Python programmu, kura dotajam skaitļu intervālam [m,n] izdrukā visus tos skaitļus,
 kuri pieder šim intervālam un kurus var izteikt kā divu naturālu skaitļu kvadrātu summu (izmantojot funkciju,
 kas pazīst vesela skaitļa kvadrātu).
 
