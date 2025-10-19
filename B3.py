@@ -30,8 +30,8 @@ def kvadrats(sk):
 """
 Funkcija divu_kvadratu_summa(x) -
 pārbauda, vai vesels skaitlis x var tikt izteikts kā divu naturālu skaitļu kvadrātu summa.
-Funkcija pārbauda visus naturālos skaitļus a, sākot no 1 līdz √x, katram aprēķinot b² = x - a².
-Ja b² ir pozitīvs un ir perfekts kvadrāts, funkcija atgriež True,
+Funkcija pārbauda visus naturālos skaitļus a, sākot no 1 līdz √x, katram aprēķinot b^2 = x - a^2.
+Ja b^2 ir pozitīvs un ir perfekts kvadrāts, funkcija atgriež True,
 pretējā gadījumā - False.
 """
 def divu_kvadratu_summa(x):
@@ -44,7 +44,7 @@ def divu_kvadratu_summa(x):
 turpinat = 1
 while turpinat == 1:
 
-    # Intervāla sākuma skaitļa ievade un skaitļa korektuma nodrošināšana.
+    # Intervāla sākuma skaitļa m ievade un skaitļa korektuma nodrošināšana.
     # Kamēr lietotāja ievade neatbilst nosacījumam m >= 0 tiek pieprasīta atkārtota skaitļa ievade (while True cikls).
     while True:
         m = int(input("Ievadi intervāla sākumu m (≥0): "))
@@ -53,7 +53,7 @@ while turpinat == 1:
             continue
         break
 
-    # Intervāla beigu skaitļa ievade un skaitļa korektuma nodrošināšana
+    # Intervāla beigu skaitļa n ievade un skaitļa korektuma nodrošināšana
     # Kamēr lietotāja ievade neatbilst nosacījumam n >= 0 un n > m tiek pieprasīta atkārtota skaitļa ievade (while True cikls).
     while True:
         n = int(input("Ievadi intervāla beigas n (≥0): "))
@@ -87,3 +87,4 @@ while turpinat == 1:
 
     # Cikla atkārtošanas iespēja.
     turpinat = int(input("\nVai vēlaties turpināt (1) vai beigt (0)? "))
+
