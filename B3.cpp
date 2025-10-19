@@ -1,6 +1,6 @@
 /*
 Daiga Leitāne, dl25036
-B3. Izveidot C++ programmu, kura dotajam skaitļu intervālam [m,n] izdrukā visus tos skaitļus,
+A3. Izveidot C++ programmu, kura dotajam skaitļu intervālam [m,n] izdrukā visus tos skaitļus,
 kuri pieder šim intervālam un kurus var izteikt kā divu naturālu skaitļu kvadrātu summu
 (izmantojot funkciju, kas pazīst vesela skaitļa kvadrātu).
 
@@ -54,10 +54,10 @@ int main() {
     int turpinat = 1;
 
     while (turpinat == 1) {
-        int m, n;
-        int garums = n - m + 1;
-        int *rezultati = new int[garums];
-        int skaits = 0;
+        int m, n; // Lietotāja ievadītais intervāla [m,n] sākums un beigas
+        int garums = n - m + 1; // Masīva garums
+        int *rezultati = new int[garums]; // Masīvs, kurā saglabā atrastos skaitļus
+        int skaits = 0; // Atrasto skaitļu skaits
 
         // Intervāla sākuma skaitļa ievade un skaitļa korektuma nodrošināšana.
         // Kamēr lietotāja ievade neatbilst nosacījumam m >= 0 tiek pieprasīta atkārtota skaitļa ievade.
