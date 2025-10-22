@@ -197,13 +197,6 @@ input, textarea {
     transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
-    border-color: #CADABF;
-    box-shadow: 0 0 8px rgba(181, 207, 183, 0.5);
-    background-color: #FFFFFF;
-    outline: none;
-}
-
 textarea {
     height: 140px;
     resize: vertical;
