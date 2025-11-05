@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eventify - Find and Buy Event Tickets</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <section class="top-section bg-gray">
+    <a href="#" class="logo top">
+       <img src="images/eventify-logo.png" alt="Eventify Logo">
+    </a>  
+    <div class="search-bar">
+      <input type="text" placeholder="Search events, artists, cities and more" />
+      <button>Search</button>
+    </div>
+  </section>
+  
+  <header class="header bg-gray">
+    <nav class="navbar">
+
+      <ul class="nav-links">
+        <li><a href="#events">Events</a>
+          <ul class="dropdown">
+            <li><a href="#">Concerts</a></li>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Theater</a></li>
+            <li><a href="#">Festivals</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#cities">Cities</a>
+          <ul class="dropdown">
+            <li><a href="#">Riga</a></li>
+            <li><a href="#">Tallinn</a></li>
+            <li><a href="#">Vilnius</a></li>
+            <li><a href="#">Warsaw</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#about">About</a>
+          <ul class="dropdown">
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="home-banner">
+	<div class="background-overlay"></div>
+	<div class="home-banner-content">
+	  <h2>Discover Amazing Events Near You</h2>
+	  <p>Concerts, sports, theater, and more — book your tickets today.</p>
+	  <a href="#events" class="btn">Browse Events</a>
+	</div>
+  </section>
+
+  <section id="events" class="events">
+    <h2>Upcoming Events</h2>
+    <div class="event-grid">
+
+      <div class="event-card bg-gray">
+        <img src="images/summer-festival.jpg" alt="Festival">
+        <div class="event-info">
+          <h3>Summer Sound Festival</h3>
+          <p class="date">July 31 - August 1, 2026 • Liepaja, Latvia</p>
+          <p class="price">From €70</p>
+          <a href="#" class="btn small">Buy Tickets</a>
+        </div>
+      </div>
+
+      <div class="event-card bg-gray">
+        <img src="images/football-match.jpg" alt="Football Match">
+        <div class="event-info">
+          <h3>Bournemouth vs Nottingham Forest</h3>
+          <p class="date">October 26, 2025 • Bournemouth, UK</p>
+          <p class="price">From €50</p>
+          <a href="#" class="btn small">Buy Tickets</a>
+        </div>
+      </div>
+
+      <div class="event-card bg-gray">
+        <img src="images/opera-macbeth.jpg" alt="Opera">
+        <div class="event-info">
+          <h3>Macbeth</h3>
+          <p class="date">January 13, 2026 • Riga, Latvia</p>
+          <p class="price">From €18</p>
+          <a href="#" class="btn small">Buy Tickets</a>
+        </div>
+      </div>
+
+      <div class="event-card bg-gray">
+        <img src="images/db&is-conference.jpg" alt="Tech Conference">
+        <div class="event-info">
+          <h3>Baltic DB&amp;IS 2026</h3>
+          <p class="date">June 28 - July 1, 2026 • Tartu, Estonia</p>
+          <p class="price">From $199</p>
+          <a href="#" class="btn small">Buy Tickets</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="about" class="about bg-gray">
+    <h2>About Eventify</h2>
+    <p>
+      Eventify helps you discover and book tickets to the best events across the country.
+      Whether it’s concerts, sports, theater, or festivals — we make finding your next unforgettable experience easy and fun.
+    </p>
+  </section>
+
+  <section id="bottom" class="bottom">
+    <div id="contacts" class="bottom-column"> 
+      <a href="#" class="logo">
+         <img src="images/eventify-logo-footer.png" alt="Eventify Logo">
+      </a>	  
+      <h2>Contact Us</h2>
+      <p>Email: support@eventify.lv</p>
+      <p>Phone: +371 99999999</p>
+  	  <ul>
+		<li><a href="#" target="_blank" aria-label="Social Icon"><i class="fab fa-facebook"></i></a></li>
+		<li><a href="#" target="_blank" aria-label="Social Icon"><i class="fab fa-instagram"></i></a></li>
+		<li><a href="#" target="_blank" aria-label="Social Icon"><i class="fab fa-twitter"></i></a></li>
+		<li><a href="#" target="_blank" aria-label="Social Icon"><i class="fab fa-linkedin-in"></i></a></li>
+		<li><a href="#" target="_blank" aria-label="Social Icon"><i class="fab fa-youtube"></i></a></li>
+	  </ul>	  
+	</div>
+	
+	<div id="explore" class="bottom-column">
+	  <h2>Explore</h2>
+	  <ul class="bottom-menu">
+	    <li class="bottom-menu-item">
+		  <a href="#">Riga</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Tallinn</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Vilnius</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Warsaw</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Berlin</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">All cities</a>
+		</li>
+	  </ul>
+	</div>
+	
+	<div id="browse" class="bottom-column">
+	  <h2>Browse tickets</h2>
+	  <ul class="bottom-menu">
+	    <li class="bottom-menu-item">
+		  <a href="#">music tickets</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">theatre tickets</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">festival tickets</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">sport tickets</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">event tickets</a>
+		</li>
+	  </ul>
+	</div>
+	
+	<div id="our-company" class="bottom-column">
+	  <h2>Our Company</h2>
+	  <ul class="bottom-menu">
+	    <li class="bottom-menu-item">
+		  <a href="#">About us</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Partners</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Investors</a>
+		</li>
+	    <li class="bottom-menu-item">
+		  <a href="#">Careers</a>
+		</li>
+	  </ul>
+	</div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Eventify. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
 
