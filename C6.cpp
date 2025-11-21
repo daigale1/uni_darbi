@@ -81,7 +81,6 @@ int main() {
 
     do{
         int n;
-        vector<int> m(n);
         
         do{
             cout << "Ievadiet naturālu skaitli n: ";
@@ -89,6 +88,8 @@ int main() {
 
             if (n <= 0) cout << "Kļūda, n jābūt naturālam skaitlim (n >= 1)." << endl;
         } while (n <= 0);
+        
+        vector<int> m(n);
 
         cout << "Ievadiet " << n << " veselus skaitļus:" << endl;
         for (int i = 0; i < n; i++) {
@@ -110,4 +111,5 @@ int main() {
 
     return 0;
 }
+
 
