@@ -41,8 +41,8 @@ function translatetext(text, from = 'en', to = 'lv') {
 }
 
 // Examples
-const logger = actionlog();
-console.log(logger("User clicked button"));
+const log = actionlog();
+console.log(log("User clicked button"));
 
 console.log(translateword("cat")); 
 console.log(translateword("Cat")); 
