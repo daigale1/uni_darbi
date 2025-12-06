@@ -40,49 +40,41 @@ int main() {
 
     Nqueue rinda;
 
-    cout << "Rindas izveide" << endl;
-    cout << "Elementu skaits: " << rinda.getCount() << endl;
+    cout << "\nElementu skaits: " << rinda.getCount() << endl;
     cout << "Vai rinda ir tukša? " << (rinda.isEmpty() ? "Jā" : "Nē") << endl;
 
-    cout << "Elementu pievienošana" << endl;
-    for (int i = 1; i <= 5; i++) {
-        if (rinda.enqueue(i * 10)) {
-            cout << "Pievienots: " << i * 10 << endl;
+    cout << "\n## Elementu pievienošana ##" << endl;
+    for (int i = 1; i <= 6; i++) {
+        if (rinda.enqueue(i * 3)) {
+            cout << "Pievienots elements: " << i * 3 << endl;
         } else {
-            cout << "Neizdevās pievienot: " << i * 10 << " (rinda ir pilna)" << endl;
+            cout << "Neizdevās pievienot: " << i * 3 << " (rinda ir pilna)" << endl;
         }
     }
 
-    cout << "Elementa pievienošana pilnai rindai" << endl;
-    if (!rinda.enqueue(60)) {
-        cout << "Nevar pievienot skaitli 60 - rinda ir pilna!" << endl;
-    }
 
-    cout << "Elementu izņemšana" << endl;
+    cout << "\n## Elementu izņemšana ##" << endl;
     cout << "Elementu skaits pirms izņemšanas: " << rinda.getCount() << endl;
 
     for (int i = 0; i < 3; i++) {
         int value = rinda.dequeue();
         if (value != -1) {
-            cout << "Izņemts: " << value << endl;
+            cout << "Izņemts elements: " << value << endl;
         }
     }
     cout << "Elementu skaits pēc izņemšanas: " << rinda.getCount() << endl;
 
-    cout << "Elementu pievienošana pec izņemšanas" << endl;
-    rinda.enqueue(34);
-    rinda.enqueue(2);
-    cout << "Elementu skaits: " << rinda.getCount() << endl;
-
-    cout << "Visu elementu izņemšana" << endl;
+    cout << "\n## Visu elementu izņemšana ##" << endl;
     while (!rinda.isEmpty()) {
-        cout << "Izņemts: " << rinda.dequeue() << endl;
+        cout << "Izņemts elements: " << rinda.dequeue() << endl;
     }
+    cout << "Elementu skaits pēc izņemšanas: " << rinda.getCount() << endl;
 
-    cout << "Elementu izņemšana no tukšas rindas" << endl;
+    cout << "\n## Elementu izņemšana no tukšas rindas ##" << endl;
     int value = rinda.dequeue();
+    cout << "Elementu skaits: " << rinda.getCount() << endl;
     if (value == -1) {
-        cout << "Rinda ir tukša!" << endl;
+        cout << "Nevar izņemt elementus, rinda ir tukša!" << endl;
     }
 
     cout << "\nProgrammas beigas. Destruktors tika izsaukts automātiski" << endl;
