@@ -11,9 +11,11 @@ Nqueue::Nqueue() {
 
 // Destruktors
 Nqueue::~Nqueue() {
+    cout << "\nLikvidēts objekts.";
     if (skaits > 0) {
-        cout << "Likvidēts objekts. Likvidēto elementu skaits: " << skaits << endl;
+        cout << " Likvidēto elementu skaits: " << skaits;
     }
+    cout << endl;
 }
 
 // Metode, kas pievieno elementu rindai
