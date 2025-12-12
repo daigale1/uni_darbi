@@ -70,14 +70,13 @@ int main() {
     }
     cout << "Elementu skaits pēc izņemšanas: " << rinda.getCount() << endl;
 
-    cout << "\n## Elementu izņemšana no tukšas rindas ##" << endl;
-    int value = rinda.dequeue();
-    cout << "Elementu skaits: " << rinda.getCount() << endl;
-    if (value == -1) {
-        cout << "Nevar izņemt elementus, rinda ir tukša!" << endl;
+    // Elementi tika pievienoti atkārtoti, lai pārbaudītu destruktora darbību
+    cout << "\n## Elementu pievienošana ##" << endl;
+    for (int i = 1; i <= 3; i++) {
+        if (rinda.enqueue(i * 3)) {
+            cout << "Pievienots elements: " << i * 3 << endl;
+        } 
     }
-
-    cout << "\nProgrammas beigas. Destruktors tika izsaukts automātiski" << endl;
-
+    
     return 0;
 }
