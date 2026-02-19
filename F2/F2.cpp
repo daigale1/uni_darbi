@@ -146,5 +146,5 @@ int main()
 
 4) Viens fails neeksistē:
     Netiek izveidots rezultāta fails, un tiek izvadīts paziņojums:
-    "Kļūda! Nevar atvērt pirmo failu."
+    "Kļūda! Nevar atvērt pirmo/otro failu."
 ********************************************************/
