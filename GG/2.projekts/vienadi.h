@@ -1,3 +1,6 @@
+#ifndef VIENADI_H
+#define VIENADI_H
+
 struct elem{
     int num;
     elem *next;
@@ -28,3 +31,5 @@ Funkcija del(first) -
  izdzēš vienvirziena saistīto sarakstu (first),
  atbrīvo visu elementu dinamiski pieprasīto atmiņu.
 */
+
+#endif // VIENADI_H
